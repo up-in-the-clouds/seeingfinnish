@@ -1,0 +1,151 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Mono", sans-serif;
+  /* background-color: rgba(241, 243, 247, 20); */
+}
+canvas {
+  display: block;
+}
+
+iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+  overflow: hidden;
+}
+nav {
+  display: none !important;
+}
+
+nav.nav.preview-nav {
+  display: none;
+  border: none;
+}
+
+.cover {
+  display: flex;
+}
+
+.right-column {
+  width: 25%;
+  display: inline-block;
+  background: #e17154;
+  height: 200vh;
+}
+h1.main-title {
+  position: sticky;
+  top: 15%;
+  font-weight: 500;
+  font-size: 5em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  padding-left: 4%;
+}
+
+.left-column {
+  display: inline-block;
+  /* background: beige; */
+  width: 75%;
+}
+
+.Sketchcontainer {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* .buttonSketch {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 3%;
+  top: -3%;
+} */
+
+.soundSketch,
+.buttonSketch {
+  overflow: hidden;
+  position: absolute;
+  padding-bottom: 3%;
+  width: 100%;
+  top: -42px;
+}
+
+.AbcSketch,
+.karaokeSketch {
+  overflow: hidden;
+  position: absolute;
+  padding-bottom: 3%;
+  top: -6%;
+  width: 100%;
+}
+
+.intro {
+  display: flex;
+  height: 100vh;
+}
+
+.intro-text {
+  padding: 2% 4% 2% 2%;
+  max-width: 65%;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+p.p-intro-text {
+  z-index: 1000;
+  position: relative;
+}
+
+img#speak-title {
+  max-width: 25%;
+  display: block;
+  margin: auto;
+  padding-top: 4%;
+}
+
+#speech {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  font-size: 3em;
+}
+
+h3.subtitle {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+.mobile {
+  display: none;
+  background-color: black;
+  color: azure;
+  padding: 5%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .intro {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    z-index: 1000;
+  }
+  body {
+    background-color: black;
+  }
+  .buttonMic,
+  .buttonPlay {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  p.p-intro-text {
+    font-size: 1.4em;
+  }
+}
