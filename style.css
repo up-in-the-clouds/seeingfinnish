@@ -34,17 +34,26 @@ nav.nav.preview-nav {
   background: #e17154;
   height: 200vh;
 }
-h1.main-title {
+
+.text {
   position: sticky;
   top: 15%;
+  padding-left: 4%;
+  max-width: 75%;
+  padding-bottom: 1%;
+}
+
+h1.main-title {
   font-weight: 500;
   font-size: 5em;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: white;
-  padding-left: 4%;
 }
 
+h3.main-subtitle {
+  color: white;
+}
 .left-column {
   display: inline-block;
   /* background: beige; */
@@ -57,13 +66,10 @@ h1.main-title {
   overflow: hidden;
 }
 
-/* .buttonSketch {
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 3%;
-  top: -3%;
-} */
-
+p.instructions {
+  text-align: right;
+  z-index: 1000;
+}
 .soundSketch,
 .buttonSketch {
   overflow: hidden;
@@ -128,7 +134,7 @@ h3.subtitle {
 }
 
 @media only screen and (max-width: 991px) {
-  .intro {
+  .desktop-container {
     display: none;
   }
   .mobile {
