@@ -125,6 +125,25 @@ h3.subtitle {
   left: 50%;
   top: 20%;
 }
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+.end-container {
+  background-color: #e17154;
+  color: #fff;
+  width: 100%;
+  padding: 8% 2% 8% 4%;
+}
+
+.end-text {
+  max-width: 60%;
+  border-top: 4px dotted white;
+}
+.mobile {
+  display: none;
+}
 .mobile {
   display: none;
   background-color: black;
@@ -147,6 +166,25 @@ h3.subtitle {
   .buttonMic,
   .buttonPlay {
     display: none;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  h1.main-title {
+    font-size: 4.5em;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  h1.main-title {
+    font-size: 3.8em;
+  }
+  .intro-text {
+    max-width: 85%;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  h1.main-title {
+    font-size: 3.4em;
   }
 }
 
