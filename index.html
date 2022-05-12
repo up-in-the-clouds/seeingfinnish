@@ -95,7 +95,7 @@
       <img id="speak-title" src="assets/SVG/SVG/t3.svg" />
       <div class="Sketchcontainer">
         <div class="karaokeSketch">
-          <iframe src="https://editor.p5js.org/aavilac/full/4eF88Qdsc"></iframe>
+          <iframe src="https://editor.p5js.org/aavilac/full/4eF88Qdsc" allow="microphone"></iframe>
         </div>
       </div>
       <div class="end-container">
@@ -113,6 +113,29 @@
     <div class="mobile">
       <h2>Please check this project out on a larger screen! :)</h2>
     </div>
+    <!-- <script>
+
+navigator.permissions.query({name: 'microphone'}).then(function (result) {
+  if (result.state == 'granted') {
+  } else if (result.state == 'prompt') {
+  } else if (result.state == 'denied') {
+  }
+  result.onchange = function () {};
+});
+      const player = document.getElementById('mic');
+    
+      const handleSuccess = function (stream) {
+        if (window.URL) {
+          player.srcObject = stream;
+        } else {
+          player.src = stream;
+        }
+      };
+    
+      navigator.mediaDevices
+        .getUserMedia({audio: true, video: false})
+        .then(handleSuccess);
+    </script> -->
     <!-- <div id="canvasContainer2"></div> -->
   </body>
 </html>

@@ -193,3 +193,89 @@ a {
     font-size: 1.4em;
   }
 }
+
+/* sound mic */
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 16px;
+  width: auto;
+  height: fit-content;
+  margin: 1em;
+  text-align: center;
+  /* display: inline-blockbuttx-shadow: 2px 2px rgb(255 255 255 / 70%); */
+  font-family: "DM Mono", sans-serif;
+}
+h6.instructions {
+  text-align: right;
+  z-index: 1000;
+  position: absolute;
+  top: -1%;
+  right: 0%;
+  font-weight: 200;
+  color: #e17154;
+  font-family: "DM Mono", sans-serif;
+}
+button.buttonWord {
+  /*   //top: 10%; */
+  position: absolute;
+  background-color: lightblue;
+}
+button.buttonWord:active {
+  background-color: blue;
+}
+
+button.buttonMic {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  background-color: #e17154;
+}
+
+button.buttonMic:active {
+  background-color: #e59c5a;
+}
+
+#speech {
+  font-family: "DM Mono", sans-serif;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+#buttonKiitos {
+  top: 5%;
+  left: 70%;
+}
+
+#buttonMoi {
+  top: 5%;
+  left: 38%;
+}
+
+#buttonHyva {
+  top: 5%;
+  left: 28%;
+}
+
+#buttonNoni {
+  top: 5%;
+  left: 12%;
+}
+
+#buttonYksi {
+  top: 5%;
+  left: 0%;
+}
+#buttonTervet {
+  top: 5%;
+  left: 52%;
+}
+
+#buttonAuki {
+  top: 5%;
+  left: 82%;
+}
